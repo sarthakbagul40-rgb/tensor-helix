@@ -1,16 +1,23 @@
-# Environment secrets — never commit
-.env
-.env.local
-.env.*.local
-
 # Dependencies
 node_modules/
 
+# Environment variables (API keys, secrets)
+.env
+.env.local
+.env.production
+.env.*.local
+
 # Build output
 dist/
-.next/
-out/
 
-# OS junk
+# Vercel
+.vercel
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# Utility/debug scripts
+*.cjs
+*.txt
+cloudflared.exe

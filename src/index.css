@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-gray-900;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .glass-white {
+    @apply bg-white/40 backdrop-blur-lg border border-white/30;
+  }
+
+  .saffron-glow {
+    @apply shadow-[0_0_20px_rgba(244,196,48,0.3)];
+  }
+  
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:root {
+  --primary: #f4c430; /* Updated to Saffron */
+  --saffron-dark: #b58900;
+  --clay: #ba4a00;
+}
+
